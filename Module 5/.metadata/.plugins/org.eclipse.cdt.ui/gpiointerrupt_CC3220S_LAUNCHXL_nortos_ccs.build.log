@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../gpiointerrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=vfplib -me --include_path="C:/Users/crich/Embedded Systems Workspaces/Module 5/gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs" --include_path="C:/Users/crich/Embedded Systems Workspaces/Module 5/gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs/Debug" --include_path="C:/ti/simplelink_cc32xx_sdk_4_30_00_06/source" --include_path="C:/ti/simplelink_cc32xx_sdk_4_30_00_06/kernel/nortos" --include_path="C:/ti/simplelink_cc32xx_sdk_4_30_00_06/kernel/nortos/posix" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=NORTOS_SUPPORT -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="gpiointerrupt.d_raw" --include_path="C:/Users/crich/Embedded Systems Workspaces/Module 5/gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs/Debug/syscfg"  "../gpiointerrupt.c"
+Finished building: "../gpiointerrupt.c"
+ 
+Building target: "gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs.out"
+Invoking: Arm Linker
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=vfplib -me --define=NORTOS_SUPPORT -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs.map" -i"C:/ti/simplelink_cc32xx_sdk_4_30_00_06/source" -i"C:/ti/simplelink_cc32xx_sdk_4_30_00_06/kernel/nortos" -i"C:/Users/crich/Embedded Systems Workspaces/Module 5/gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs/Debug/syscfg/" -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs_linkInfo.xml" --entry_point=resetISR --rom_model -o "gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs.out" "./gpiointerrupt.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../cc32xxs_nortos.cmd"  -lti_utils_build_linker.cmd.genlibs -l"ti/devices/cc32xx/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs.out"
+ 
+C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armobjcopy -O binary --only-section .text --only-section .const --only-section .cinit --only-section .resetVecs gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs.out gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs.bin
+ 
+
+**** Build Finished ****

@@ -1,0 +1,1323 @@
+!SESSION 2023-12-04 11:47:15.938 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=11.0.13
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2023-12-04 11:48:14.273
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2023-12-04 11:48:14.276
+!MESSAGE debugServerDir=C:/ti/ccs1250/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.842
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.844
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.844
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.845
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.845
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.848
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.879
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.905
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:17.931
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2023-12-04 11:48:18.020
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.equinox.event 4 0 2023-12-04 11:48:21.688
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@ae5d544 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@4baf0b7f], renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@1cdb290c, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@ae5d544 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@4baf0b7f], renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@1cdb290c, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@4baf0b7f], NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@4baf0b7f], NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@30f39d9d
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4779)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:139)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:188)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:573)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:933)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:96)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1469)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:118)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:344)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:109)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:50)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElementsRecursive(ModelServiceImpl.java:175)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:437)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:430)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.findValidElementsToMinimize(MinMaxAddon.java:855)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:798)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:734)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:408)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 89 more
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2023-12-04 11:48:22.608
+!MESSAGE CCS HTTP adapter started! [ccs.port:52372] - Open 'http://localhost:52372/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.ui 1 0 2023-12-04 11:48:33.343
+!MESSAGE CCS IDE session started!
+	CCS build: 12.5.0.00007
+	CCS location: C:/ti/ccs1250/ccs
+	Workspace location: C:/Users/crich/Embedded Systems Workspaces/Project
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:34.576
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:35.138
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:35.560
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:36.660
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:37.287
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:38.382
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:39.745
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:40.167
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/CCSv5/Updates/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:40.484
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/CCSv5/Updates/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:41.047
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:42.455
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:43.358
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:44.278
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:44.580
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:45.351
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:55.741
+!MESSAGE Using unsafe http transport to retrieve http://www.blackhawk-dsp.com/updates/win64/com.bh.ccstudio.emulation.win64_9.0.0.001, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:48:56.181
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 11:49:24.817
+!MESSAGE Connection to https://download.segger.com/J-Link/JLink_TI_CCS_plugin/p2.index failed on PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:273)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:241)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 39 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.base/java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 45 more
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2023-12-04 11:49:25.828
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.segger.com/J-Link/JLink_TI_CCS_plugin/content.xml.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:249)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:69)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:685)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:171)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:113)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:685)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:78)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:273)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:241)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 37 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.base/java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 43 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 11:49:25.829
+!MESSAGE Unable to read repository at https://download.segger.com/J-Link/JLink_TI_CCS_plugin/content.xml.
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:273)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:241)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 37 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.base/java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 43 more
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2023-12-04 11:49:33.538
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://software-dl.ti.com/ccs/esd/CCSv12/Updates/CCS12.0.0.00009_update.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:405)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:709)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:171)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:113)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:685)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:78)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2023-12-04 11:49:33.539
+!MESSAGE No repository found at https://software-dl.ti.com/ccs/esd/CCSv12/Updates/CCS12.0.0.00009_update.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-12-04 11:49:40.128
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2023-12-04 11:52:49.921
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-04 11:53:45.534
+!MESSAGE Indexed 'gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs' (2 sources, 14 headers) in 0.547 sec: 175 declarations; 436 references; 1 unresolved inclusions; 0 syntax errors; 14 unresolved names (2.2%)
+
+!ENTRY org.eclipse.ui 2 2 2023-12-05 14:38:50.200
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:00.769
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:00.770
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:00.774
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:00.775
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:00.777
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:00.777
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:01.265
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:01.309
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:01.310
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:01.310
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:01.312
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:01.312
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:55.671
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:55.680
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:55.689
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:55.698
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:55.709
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:39:55.716
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.890
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.891
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.891
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.892
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.893
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.896
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.924
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.925
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.926
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.926
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.927
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:43:28.928
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.863
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.865
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.868
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.870
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.871
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.872
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.942
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.943
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.943
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.944
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.945
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:44:58.945
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.332
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.337
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.338
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.338
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.339
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.379
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.403
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.404
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.404
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.405
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.406
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:46:23.407
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.279
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.286
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.287
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.287
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.288
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.289
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.315
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.354
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.355
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.356
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.356
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:51:16.357
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY org.eclipse.cdt.ui 4 0 2023-12-05 14:53:58.541
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element file:/C:/ti/simplelink_cc32xx_sdk_4_30_00_06/source/ti/drivers/i2c/I2CCC32XX.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:95)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2023-12-05 14:53:58.541
+!MESSAGE Element file:/C:/ti/simplelink_cc32xx_sdk_4_30_00_06/source/ti/drivers/i2c/I2CCC32XX.c does not exist.
+
+!ENTRY org.eclipse.cdt.ui 4 0 2023-12-05 14:53:58.541
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element gpiointerrupt.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2023-12-05 14:53:58.541
+!MESSAGE Element gpiointerrupt.c does not exist.
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:02.957
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:02.964
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:02.965
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:02.966
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:02.966
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:02.967
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:03.032
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:03.033
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:03.033
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:03.034
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:03.034
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:54:03.035
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.335
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.336
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.337
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.338
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.338
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.339
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.362
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.362
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.363
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.364
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.365
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:56:55.365
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY org.eclipse.jface 2 0 2023-12-05 14:57:20.825
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-05 14:57:20.825
+!MESSAGE A conflict occurred for ALT+E:
+Binding(ALT+E,
+	ParameterizedCommand(Command(com.ti.ccstudio.debug.ui.command.restoreDebugState,Restore Debug State,
+		Restore debug state for the selected core(s),
+		Category(com.ti.ccstudio.debug.ui.commandCategory,Code Composer Studio Debug Commands,Set of commands for Code Composer Studio debug actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@bd6f22c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(ALT+E,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6172c15b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.593
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.594
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.595
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.598
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.603
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.603
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.620
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.621
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.621
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.622
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.622
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 14:58:26.623
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.116
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.121
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.121
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.122
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.123
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.123
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.149
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.190
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.190
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.190
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.191
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:01:35.192
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2023-12-05 15:06:31.306
+!MESSAGE Unable to locate file: /db/vtree/library/trees/mcpi/mcpi-5.30.00.30/exports/coresdk_cc32xx_5_30_00_30/kernel/nortos/dpl/HwiPCC32XX_nortos.c
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.751
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.756
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.759
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.760
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.760
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.761
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.777
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.777
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.778
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.778
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.779
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:12:59.780
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.097
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.097
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.100
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.105
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.106
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.106
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.121
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.122
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.122
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.123
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.123
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:17:03.127
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-12-05 15:17:37.984
+!MESSAGE DS_ERROR: CS_DAP: Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 9.13.0.00201) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-12-05 15:17:38.228
+!MESSAGE DS_ERROR: CS_DAP: Unable to determine target status after 20 attempts
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-12-05 15:17:38.243
+!MESSAGE DS_ERROR: CS_DAP: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-12-05 15:17:38.315
+!MESSAGE DS_ERROR: Cortex_M4_0: JTAG Communication Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 9.13.0.00201) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-12-05 15:17:38.344
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.574
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.575
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.576
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.577
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.578
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.578
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.602
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.645
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.645
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.646
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.647
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:18:28.647
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.911
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.919
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.920
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.920
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.921
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.921
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.951
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.952
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.952
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.953
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.953
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:07.954
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.318
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.320
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.322
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.328
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.329
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.330
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.356
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.398
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.399
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.399
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.400
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:19:43.400
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.551
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.556
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.563
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.563
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.564
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.565
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.658
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.659
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.659
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.661
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.661
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:20:56.662
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.728
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.730
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.731
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.731
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.734
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.739
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.756
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.757
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.757
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.758
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.758
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2023-12-05 15:21:42.759
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
